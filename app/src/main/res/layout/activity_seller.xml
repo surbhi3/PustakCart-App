@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.bookx.Seller"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgdark"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:text=" Book Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/ed1"
+            android:ems="10"
+            android:hint=" Book's Name"
+            android:textStyle="normal|bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/black"
+            android:background="@android:color/white"
+            android:layout_below="@+id/textView1"
+            android:drawableLeft="@drawable/book"
+            android:layout_height="30dp"
+            android:layout_width="280dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/ed2"
+            android:hint=" Author's Name"
+            android:textStyle="normal|bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/black"
+            android:background="@android:color/white"
+            android:layout_below="@+id/ed1"
+            android:layout_marginTop="12dp"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/name"
+            android:layout_width="280dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/ed3"
+            android:hint=" Selling Price"
+            android:inputType="number"
+            android:textStyle="normal|bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/black"
+            android:background="@android:color/white"
+            android:layout_below="@+id/ed2"
+            android:layout_marginTop="12dp"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/price"
+            android:layout_width="280dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/ed3"
+            android:layout_marginTop="12dp"
+            android:layout_height="30dp"
+            android:layout_width="280dp"
+            android:background="@drawable/bg_spinner"
+            android:id="@+id/relative_layout3"
+            android:layout_centerHorizontal="true">
+
+            <Spinner
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:id="@+id/spinner"
+                android:dropDownWidth="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:text=" Personal Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/relative_layout3"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/ed4"
+            android:hint=" Seller's Name"
+            android:textStyle="normal|bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/black"
+            android:background="@android:color/white"
+            android:layout_below="@+id/textView2"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/name"
+            android:layout_width="280dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/ed5"
+            android:hint=" Contact Number"
+            android:layout_below="@+id/ed4"
+            android:inputType="number"
+            android:textStyle="normal|bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/black"
+            android:background="@android:color/white"
+            android:layout_marginTop="12dp"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/ph_num"
+            android:layout_width="280dp"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="?attr/colorAccent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:id="@+id/CardView1"
+            android:layout_below="@+id/ed5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp"
+            android:layout_width="280dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textColor="#064a5a"
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

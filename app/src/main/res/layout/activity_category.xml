@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.bookx.Category"
+    android:background="@drawable/bg3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/relative_layout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:text="Choose Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="35sp"
+            android:layout_marginBottom="50dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_height="50dp"
+            app:cardBackgroundColor="?attr/colorAccent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            android:id="@+id/CardView1"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_width="270dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="View All Available Books"
+                    android:textColor="#064a5a"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_height="50dp"
+            app:cardBackgroundColor="?attr/colorAccent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            android:id="@+id/CardView2"
+            android:layout_below="@+id/CardView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_width="270dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Search Books By Subject"
+                    android:textColor="#064a5a"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_height="50dp"
+            app:cardBackgroundColor="?attr/colorAccent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            android:id="@+id/CardView3"
+            android:layout_below="@+id/CardView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:layout_width="270dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Sell a Book"
+                    android:textColor="#064a5a"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

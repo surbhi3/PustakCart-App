@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.bookx.MainActivity"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="10dp"
+        android:padding="17dp">
+
+        <TextView
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/textView1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:textSize="46sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp" />
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_marginTop="58dp"
+            android:hint=" Email"
+            android:textStyle="normal|bold|italic"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/white"
+            android:drawableLeft="@drawable/email"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edit_text"
+            android:id="@+id/ed1"
+            android:layout_below="@+id/textView1"
+            android:layout_width="240dp"
+            android:layout_height="48dp" />
+
+        <EditText
+            android:id="@+id/ed2"
+            android:ems="10"
+            android:hint=" Password"
+            android:selectAllOnFocus="false"
+            android:textStyle="normal|bold|italic"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/white"
+            android:drawableLeft="@drawable/lock"
+            android:layout_marginTop="12dp"
+            android:layout_alignLeft="@+id/ed1"
+            android:layout_alignStart="@+id/ed1"
+            android:background="@drawable/edit_text"
+            android:layout_below="@+id/ed1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="240dp"
+            android:layout_height="48dp" />
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:id="@+id/CardView1"
+            android:layout_marginTop="19dp"
+            android:layout_width="145dp"
+            android:layout_below="@+id/ed2"
+            android:layout_centerHorizontal="true"
+            android:layout_height="42dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text=" Login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#064a5a"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tx1"
+                    android:textSize="22sp"
+                    android:textStyle="normal|bold"
+                    android:drawableRight="@drawable/login" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Forgot Password? "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/background_light"
+            android:textColorLink="@android:color/white"
+            android:textStyle="normal|bold|italic"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/CardView1"
+            android:layout_marginBottom="18dp"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_marginTop="5dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="58dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        app:srcCompat="@drawable/user_login"
+        android:id="@+id/imageView"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_height="100dp" />
+
+</RelativeLayout>

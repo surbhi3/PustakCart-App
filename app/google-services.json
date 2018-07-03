@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "583228671869",
+    "firebase_url": "https://bookx-27484.firebaseio.com",
+    "project_id": "bookx-27484",
+    "storage_bucket": "bookx-27484.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583228671869:android:be51d30a886179c0",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.bookx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583228671869-covi1amlagrev4ac2inmfncadn7fvfja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.bookx",
+            "certificate_hash": "076b07b00813def28c4ab701b910484dfdf09628"
+          }
+        },
+        {
+          "client_id": "583228671869-18egljdm1cn5uprubtmq5p17r5eg62tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGjHtV9bsuliKq5cwnfVK9pY7x6i4xnRU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583228671869-18egljdm1cn5uprubtmq5p17r5eg62tb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
